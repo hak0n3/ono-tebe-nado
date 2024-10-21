@@ -11,15 +11,15 @@ header {
 
     display: flex;
     align-items: center;
-
-    /* background-color: lime; */
+    justify-content: start;
 
     font-weight: 400;
     font-size: 18px;
 }
 
-.header_menu {
-    margin: 44px 36px 39px 26px;
+.header__menu {
+    margin-left: 26px;
+    margin-right: 36px;
 
     width: 392px;
     height: 22px;
@@ -43,12 +43,12 @@ header {
 }
 
 .header__logo {
+    margin-right: 184px;
+
     height: 100%;
 }
 
 .header__address {
-    margin: 5px 25px 2px 184px;
-
     width: 240px;
     height: 98px;
     line-height: 24px;
