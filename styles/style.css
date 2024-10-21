@@ -6,24 +6,27 @@ body {
 }
 
 header {
+    margin-top: 92px;
+    margin-bottom: 96px;
+
     height: 105px;
     width: 1052px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: start;
 
     font-weight: 400;
     font-size: 18px;
 }
 
 .header__menu {
-    margin-left: 26px;
-    margin-right: 36px;
-
     width: 392px;
     height: 22px;
     line-height: 21px;
+
+    margin-left: 25px;
 }
 
 .header__links-list {
@@ -43,8 +46,6 @@ header {
 }
 
 .header__logo {
-    margin-right: 184px;
-
     height: 100%;
 }
 
@@ -53,10 +54,20 @@ header {
     height: 98px;
     line-height: 24px;
 
+    justify-self: end;
+    margin-right: 25px;
+
     font-style: normal;
 }
 
 .address__link {
     text-decoration: none;
     border-bottom: 1px solid black; /* Сделано через рамку, чтобы текст при случае text-decoration: none не "съедал" подчеркивание */
+}
+
+.cover {
+    width: 1100px; /* Убрать потом */
+    height: 757px;
+    background-color: lightgrey; /* Будет отображен цвет в случае не отображения картинки */
+    background-image: url('../images/cover.jpg');
 }
