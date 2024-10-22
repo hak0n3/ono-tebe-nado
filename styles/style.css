@@ -66,7 +66,7 @@ header {
 }
 
 .cover {
-    width: 1100px; /* Убрать потом */
+    width: 1100px;
     height: 757px;
     background-color: lightgrey; /* Будет отображен цвет в случае не отображения картинки */
     background-image: url('../images/cover.jpg');
@@ -76,6 +76,7 @@ header {
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .overlay {
@@ -88,6 +89,7 @@ header {
 }
 
 .cover__title {
+    padding-top: 165px;
     width: 1000px;
     height: 355px;
 
@@ -100,20 +102,63 @@ header {
 
     font-size: 100px;
     font-weight: 700;
-    line-height: 100px;
-    letter-spacing: 30%;
+    line-height: 115px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .aligned-text {
-    line-height: 115px;
+    display: block;
+    letter-spacing: 0.3em; /* Использованы em для масшатибрования и демасшатибрования */
 }
 
 .aligned-text_center {
     justify-self: center;
+    line-height: 100px;
 }
 
 .aligned-text_right {
     justify-self: end;
-    letter-spacing: 60%;;
+    line-height: 100px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em; /* Использованы em для масшатибрования и демасшатибрования */
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    height: 51px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.cover__description-text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 26px;
+}
+
+.bet-button {
+    width: 256px;
+    height: 100%;
+
+
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
 }
