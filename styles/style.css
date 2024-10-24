@@ -200,7 +200,7 @@ main {
 
 .lots__card-list-item {
     width: 334px;
-    min-height: 563px; /* Мб причина съезда */
+    min-height: 450px; /* Причина съезда */
 
     flex-basis: 334px;
     flex-grow: 1;
@@ -278,6 +278,9 @@ main {
 }
 
 .lots__look-more-link {
+    position: relative;
+    inset: 30px 0 0 40px;
+
     color: #000;
     font-weight: 400;
     font-size: 20px;
