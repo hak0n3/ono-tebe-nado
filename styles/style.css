@@ -253,8 +253,7 @@ main {
 
     color: #fff;
     font-size: 22px;
-    font-weight: 700;
-    text-decoration: underline;
+    font-weight: 700;;
     text-transform: uppercase;
     line-height: 26.4px;
     text-underline-offset: 2px;
@@ -378,6 +377,6 @@ footer address {
 
 .footer__social-list {
     display: flex;
-    gap: 48px; 
     justify-self: end;
+    gap: 48px;
 }
