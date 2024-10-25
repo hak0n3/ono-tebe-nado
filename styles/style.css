@@ -348,13 +348,14 @@ footer {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    background-color: pink;
 }
 
 footer address {
-    justify-self: start;
     margin: 0;
+
+    justify-self: start;
+
+    letter-spacing: 0.25px;
 }
 
 .footer__menu {
@@ -365,7 +366,6 @@ footer address {
     line-height: 21px;
     text-align: center;
     text-underline-offset: 5px;
-    text-decoration: underline;
 }
 
 .footer__menu-list {
