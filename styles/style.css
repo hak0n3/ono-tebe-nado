@@ -113,13 +113,12 @@ main {
     margin: 165px auto 0;
 
     width: 1000px;
-    height: 355px;
 
     position: relative;
     z-index: 1;
 
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     gap: 20px;
 
     font-size: 100px;
@@ -195,7 +194,6 @@ main {
     margin-top: 179px;
 
     width: 1052px;
-    height: 692px;
 }
 
 .lots__heading {
